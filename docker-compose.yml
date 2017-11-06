@@ -1,0 +1,8 @@
+prerender:
+  container_name: prerender
+  build: ./build
+  restart: always
+  environment:
+      - CACHE_LIVE_TIME=10000
+  ports:
+   - "3000:3000"
